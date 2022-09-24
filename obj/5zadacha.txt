@@ -1,0 +1,22 @@
+/*Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
+5, 25  ->  да
+-4, 16  ->  да
+25, 5  ->  да
+8,9  ->  нет
+*/
+int GetNumber ()
+{
+    Console.WriteLine("Введите числа");
+    string firstNumberStr = Console.ReadLine();
+    int firstNumber =  Convert.ToInt32(firstNumberStr);
+    return firstNumber;
+} 
+
+int firstNumber = GetNumber();
+int secondNumber = GetNumber();
+bool result = (firstNumber / secondNumber == secondNumber);
+
+if (result)
+    Console.WriteLine ("Квадрат Числа ");
+else 
+    Console.WriteLine ($"Не Квадрат");

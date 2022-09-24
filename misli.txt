@@ -1,4 +1,4 @@
-﻿Console.Clear();
+Console.Clear();
 System.Console.WriteLine();
 
 int[] num = new int[2];
