@@ -1,15 +1,17 @@
-﻿Console.Clear();
-System.Console.WriteLine();
+﻿/*Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 
-int[] num = new int[2];
-string Result = "не является";
-
-for (int i = 0; i < 2; i++)
+456 -> 5
+782 -> 8
+918 -> 1
+*/
+int GetNumber ()
 {
-    num[i] = new Random().Next(1, 1000);
-}
+Console.WriteLine("Введите число");
+    string firstNumberStr = Console.ReadLine();
+    int firstNumber =  Convert.ToInt32(firstNumberStr);
+    return firstNumber;
+} 
+int firstNumber = GetNumber();
 
-if (num[0] / num[1] == num[1]) Result = Result.Replace("не ", "");
-
-System.Console.WriteLine($"Число {num[0]} {Result} квадратом числа {num[1]}");
-System.Console.WriteLine();
+string str = firstNumber.ToString();
+Console.WriteLine(str[1]);
